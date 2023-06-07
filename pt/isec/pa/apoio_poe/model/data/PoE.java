@@ -47,6 +47,7 @@ public class PoE implements Serializable, IOriginator{
     }
 
     public void addAluno() {
+        /*
         try {
             System.out.println("Estou a inserir alunos");
             ArrayList<String> arrayAluno = new ArrayList<>();
@@ -76,6 +77,39 @@ public class PoE implements Serializable, IOriginator{
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }*/
+
+        try {
+            System.out.println("Estou a inserir alunos");
+            ArrayList<String> arrayAluno = new ArrayList<>();
+            InputStream inputStream = getClass().getResourceAsStream("/resources/Aluno.csv");
+            Scanner scAluno = new Scanner(inputStream);
+
+            scAluno.useDelimiter(";");
+            while (scAluno.hasNext()) {
+                arrayAluno.add(scAluno.nextLine());
+            }
+            String[] dadosAluno;
+            boolean exist;
+            for (int i = 0; i < arrayAluno.size(); i++) {
+                exist = false;
+                dadosAluno = arrayAluno.get(i).split(";");
+                for(var a: listaDeAlunos){
+                    if(a.getNumero() == Long.parseLong(dadosAluno[0])){
+                        exist = true;
+                        break;
+                    }
+                }
+                if(exist){
+                    continue;
+                }
+                listaDeAlunos.add(new Aluno(Long.parseLong(dadosAluno[0]), dadosAluno[1], dadosAluno[2],
+                        dadosAluno[3], dadosAluno[4], Double.parseDouble(dadosAluno[5]),
+                        Boolean.parseBoolean(dadosAluno[6]), null));
+                System.out.println("Inseri alunos");
+            }
+        } catch (NullPointerException | NoSuchElementException e) {
+            e.printStackTrace();
         }
     } //FALTA VERIFICAR
 
@@ -101,6 +135,7 @@ public class PoE implements Serializable, IOriginator{
     }
 
     public void addDocente() {
+        /*
         try {
             ArrayList<String> arrayDocente = new ArrayList<>();
             Scanner scDocente = new Scanner(new File("pt/isec/pa/apoio_poe/model/data/Docentes.csv"));
@@ -131,7 +166,40 @@ public class PoE implements Serializable, IOriginator{
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }*/
+        try {
+            ArrayList<String> arrayDocente = new ArrayList<>();
+            InputStream inputStream = getClass().getResourceAsStream("/resources/Docentes.csv");
+            Scanner scDocente = new Scanner(inputStream);
+
+            scDocente.useDelimiter(",");
+            //setting comma as delimiter pattern
+
+            while (scDocente.hasNext()) {
+                arrayDocente.add(scDocente.nextLine());
+            }
+
+            String[] dadosDocente;
+            boolean exist;
+            for (int i = 0; i < arrayDocente.size(); i++) {
+                exist = false;
+                dadosDocente = arrayDocente.get(i).split(",");
+                for(var d : listaDeDocentes){
+                    if(Objects.equals(d.getEmail(), dadosDocente[1])){
+                        exist = true;
+                        break;
+                    }
+                }
+                if(exist){
+                    continue;
+                }
+                listaDeDocentes.add(new Docente(dadosDocente[0], dadosDocente[1]));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+
     } //FALTA VERIFICAR
 
     public void addDocenteSingular(Docente d){
@@ -152,6 +220,7 @@ public class PoE implements Serializable, IOriginator{
 
 
     public void addProposta(){
+        /*
         try {
             ArrayList<String> arrayProposta = new ArrayList<>();
             Scanner scProposta = new Scanner(new File("pt/isec/pa/apoio_poe/model/data/Propostas.csv"));
@@ -201,7 +270,59 @@ public class PoE implements Serializable, IOriginator{
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }*/
+        try {
+            ArrayList<String> arrayProposta = new ArrayList<>();
+            InputStream inputStream = getClass().getResourceAsStream("/resources/Propostas.csv");
+            Scanner scProposta = new Scanner(inputStream);
+
+            scProposta.useDelimiter(",");
+
+            while (scProposta.hasNext()) {
+                arrayProposta.add(scProposta.nextLine());
+            }
+            String[] dadosProposta;
+            boolean exist;
+            for (int i = 0; i < arrayProposta.size(); i++) {
+                exist = false;
+                dadosProposta = arrayProposta.get(i).split(",");
+
+                for (var p : listaDePropostas) {
+                    if (p.getIdProposta().equals(dadosProposta[1])) {
+                        exist = true;
+                        break;
+                    }
+                }
+                if (exist) {
+                    continue;
+                }
+
+                if (dadosProposta[0].equals("T1")) {
+                    if (dadosProposta.length == 6) {
+                        listaDePropostas.add(new Estagio(dadosProposta[0], dadosProposta[1], Long.parseLong(dadosProposta[5]), dadosProposta[3],
+                                dadosProposta[4], dadosProposta[2], false));
+                    } else {
+                        listaDePropostas.add(new Estagio(dadosProposta[0], dadosProposta[1], 0, dadosProposta[3],
+                                dadosProposta[4], dadosProposta[2], false));
+                    }
+                } else if (dadosProposta[0].equals("T2")) {
+                    if (dadosProposta.length == 6) {
+                        listaDePropostas.add(new Projeto(dadosProposta[0], dadosProposta[1], Long.parseLong(dadosProposta[5]), dadosProposta[3],
+                                dadosProposta[2], dadosProposta[4], false));
+                    } else {
+                        listaDePropostas.add(new Projeto(dadosProposta[0], dadosProposta[1], 0, dadosProposta[3],
+                                dadosProposta[2], dadosProposta[4], false));
+                    }
+
+                } else if (dadosProposta[0].equals("T3")) {
+                    listaDePropostas.add(new Autoproposto(dadosProposta[0], dadosProposta[1], Long.parseLong(dadosProposta[3]), dadosProposta[2], false));
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
     } //FALTA VERIFICAR
 
     public void addPropostaSingular(Proposta p){
@@ -325,6 +446,7 @@ public class PoE implements Serializable, IOriginator{
     }
 
     public void addCandidatura(){
+        /*
         try {
             ArrayList<String> arrayCandidatura = new ArrayList<>();
             Scanner scCandidatura = new Scanner(new File("pt/isec/pa/apoio_poe/model/data/Candidatura.csv"));
@@ -352,6 +474,31 @@ public class PoE implements Serializable, IOriginator{
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }*/
+        ArrayList<String> arrayCandidatura = new ArrayList<>();
+        InputStream inputStream = getClass().getResourceAsStream("/Candidatura.csv");
+        Scanner scCandidatura = new Scanner(inputStream);
+        scCandidatura.useDelimiter(",");
+        while (scCandidatura.hasNext()) {
+            arrayCandidatura.add(scCandidatura.nextLine());
+        }
+        String[] dadosCandidatura;
+        boolean exist;
+        for (int i = 0; i < arrayCandidatura.size(); i++) {
+            exist = false;
+            dadosCandidatura = arrayCandidatura.get(i).split(",");
+            for (var c : listaDeCandidaturas) {
+                if (c.getNumero() == Long.parseLong(dadosCandidatura[0])) {
+                    exist = true;
+                    break;
+                }
+            }
+            if (exist) {
+                continue;
+            }
+
+            listaDeCandidaturas.add(new Candidatura(Long.parseLong(dadosCandidatura[0]), new ArrayList<>(List.of(Arrays.copyOfRange(dadosCandidatura,1,dadosCandidatura.length)))));
+
         }
     }
 
