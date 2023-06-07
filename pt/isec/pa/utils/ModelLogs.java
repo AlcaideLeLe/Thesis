@@ -8,6 +8,7 @@ public class ModelLogs {
     public static ModelLogs getInstance() {
         if(instance == null)
             instance = new ModelLogs();
+
         return instance;
     }
 

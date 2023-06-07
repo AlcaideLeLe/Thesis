@@ -8,6 +8,7 @@ public final class PAInput {
     private static Scanner sc;
 
     static {
+
         resetScanner();
     }
 
