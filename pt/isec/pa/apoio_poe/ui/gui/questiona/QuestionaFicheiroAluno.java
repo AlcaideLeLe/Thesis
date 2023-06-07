@@ -27,6 +27,7 @@ public class QuestionaFicheiroAluno extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

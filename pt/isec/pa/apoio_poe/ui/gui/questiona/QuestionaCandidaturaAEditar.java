@@ -30,6 +30,7 @@ public class QuestionaCandidaturaAEditar extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

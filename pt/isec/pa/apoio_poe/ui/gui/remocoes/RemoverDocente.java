@@ -33,6 +33,7 @@ public class RemoverDocente extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

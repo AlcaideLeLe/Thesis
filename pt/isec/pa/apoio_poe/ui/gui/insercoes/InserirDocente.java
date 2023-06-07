@@ -47,6 +47,7 @@ public class InserirDocente extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

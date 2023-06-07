@@ -37,6 +37,7 @@ public class InserirAluno extends BorderPane {
     Button buttonClose;
 
 
+
     Label labelNr;
     Label labelNome;
     Label labelEmail;

@@ -34,6 +34,7 @@ public class GestaoCAND extends BorderPane {
     Button ButtonExportarCandidaturasParaCsv;
 
 
+
     Button ButtonVoltar;
 
     Label mensagemEscolha;

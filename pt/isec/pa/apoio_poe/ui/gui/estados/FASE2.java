@@ -32,6 +32,7 @@ public class FASE2 extends BorderPane {
     Button ButtonConsultaPropostas;
 
 
+
     Button ButtonAvancarFase;
     Button ButtonRecuarFase;
     Button ButtonFecharFase;

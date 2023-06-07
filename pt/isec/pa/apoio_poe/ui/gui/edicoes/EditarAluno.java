@@ -24,6 +24,7 @@ public class EditarAluno extends BorderPane {
     TextField textPontuacao;
     TextField textPropostaAssociada;
 
+
     CheckBox isAcesso;
     Button buttonConfirm;
     Button buttonClose;

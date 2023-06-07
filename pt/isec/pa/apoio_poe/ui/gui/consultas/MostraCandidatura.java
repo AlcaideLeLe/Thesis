@@ -16,6 +16,7 @@ public class MostraCandidatura extends BorderPane {
         this.context = context;
         this.nr = nr;
         createViews();
+
     }
 
     TableView tableView = new TableView();

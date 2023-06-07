@@ -36,6 +36,7 @@ public class QuestionaDocente extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

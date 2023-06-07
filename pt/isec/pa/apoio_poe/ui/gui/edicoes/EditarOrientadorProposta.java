@@ -23,6 +23,7 @@ public class EditarOrientadorProposta extends BorderPane {
 
     Label labelEmail;
 
+
     GridPane grid;
 
     String IdProposta;

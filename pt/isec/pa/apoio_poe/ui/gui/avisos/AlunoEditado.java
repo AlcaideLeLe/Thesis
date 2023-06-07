@@ -20,6 +20,7 @@ public class AlunoEditado extends BorderPane {
     Button buttonOkay;
 
 
+
     Label labelInfo;
 
     public AlunoEditado(apoio_poeContext context) {

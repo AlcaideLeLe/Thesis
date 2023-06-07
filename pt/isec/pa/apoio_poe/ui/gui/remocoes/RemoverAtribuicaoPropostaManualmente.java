@@ -28,6 +28,7 @@ public class RemoverAtribuicaoPropostaManualmente extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

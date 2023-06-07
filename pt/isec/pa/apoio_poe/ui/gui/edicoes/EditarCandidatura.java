@@ -27,6 +27,7 @@ public class EditarCandidatura extends BorderPane {
 
     Label labelPropostas;
 
+
     GridPane grid;
 
     long nr;

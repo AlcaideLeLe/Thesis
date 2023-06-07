@@ -12,6 +12,7 @@ public class MostraAlunosComCandidaturaESemProposta extends BorderPane {
 
     public MostraAlunosComCandidaturaESemProposta(apoio_poeContext context) {
         this.context = context;
+
         createViews();
     }
     TableView tableView = new TableView();

@@ -15,6 +15,7 @@ public class MostraOrientadorDeProposta extends BorderPane {
         this.context = context;
         this.ID = ID;
         createViews();
+
     }
 
     TableView tableView = new TableView();

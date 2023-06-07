@@ -10,6 +10,7 @@ public class ConsultarOrientacaoDeDocente extends BorderPane {
     apoio_poeContext context;
 
     Label textOrientacoes;
+
     String email;
     GridPane grid;
 

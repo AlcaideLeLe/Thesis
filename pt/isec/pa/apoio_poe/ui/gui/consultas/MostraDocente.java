@@ -16,6 +16,7 @@ public class MostraDocente extends BorderPane {
         this.context = context;
         this.email = email;
         createViews();
+
     }
 
     TableView tableView = new TableView();

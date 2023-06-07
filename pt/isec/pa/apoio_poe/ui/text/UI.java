@@ -38,6 +38,7 @@ public class UI {
                 case InicioState:
                     mostraMenuInicio();
                     break;
+
                 case FASE1:
                     mostraMenuIncial();
                     break;

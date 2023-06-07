@@ -27,6 +27,7 @@ public class GraficoOrientadores extends BorderPane {
         this.context = context;
         this.d = d;
         createViews();
+
     }
 
     public void createViews(){

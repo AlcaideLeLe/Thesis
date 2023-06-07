@@ -39,6 +39,7 @@ public class InserirCandidatura extends BorderPane {
         registerHandlers();
     }
 
+
     private void registerHandlers(){
         buttonConfirm.setOnAction(ev->{
             boolean existe = false;

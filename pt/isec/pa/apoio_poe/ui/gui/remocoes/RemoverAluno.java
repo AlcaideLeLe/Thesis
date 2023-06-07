@@ -32,6 +32,7 @@ public class RemoverAluno extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

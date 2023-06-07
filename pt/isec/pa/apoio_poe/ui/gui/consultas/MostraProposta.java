@@ -14,6 +14,7 @@ public class MostraProposta extends BorderPane {
         this.context = context;
         this.id = id;
         createViews();
+
     }
 
     TableView tableView = new TableView();

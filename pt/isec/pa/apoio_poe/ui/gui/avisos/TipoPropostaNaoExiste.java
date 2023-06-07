@@ -20,6 +20,7 @@ public class TipoPropostaNaoExiste extends BorderPane {
     Button buttonOkay;
 
 
+
     Label labelInfo;
 
     public TipoPropostaNaoExiste(apoio_poeContext context) {

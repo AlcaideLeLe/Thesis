@@ -34,6 +34,7 @@ public class GESTAO_ORI extends BorderPane {
     Label listaDeAlunos;
 
 
+
     public GESTAO_ORI(apoio_poeContext context) {
         this.context = context;
         createViews();

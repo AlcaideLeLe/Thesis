@@ -19,6 +19,7 @@ public class ConsultarCandidatura extends BorderPane {
 
     TextField textNr;
 
+
     Label labelNr;
 
     Button buttonConfirm;

@@ -13,6 +13,7 @@ public class MostraAlunosComAutoproposta extends BorderPane {
 
     public MostraAlunosComAutoproposta(apoio_poeContext context) {
         this.context = context;
+
         createViews();
     }
 

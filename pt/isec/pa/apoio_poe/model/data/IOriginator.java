@@ -5,4 +5,5 @@ public interface IOriginator {
     IMemento save();
     void restore(IMemento memento);
 
+
 }

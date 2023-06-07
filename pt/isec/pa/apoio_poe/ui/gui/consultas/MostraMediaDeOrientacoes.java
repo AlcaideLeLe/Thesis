@@ -20,6 +20,7 @@ public class MostraMediaDeOrientacoes extends BorderPane {
     public MostraMediaDeOrientacoes(apoio_poeContext context) {
         this.context = context;
         createViews();
+
     }
 
     private void createViews() {

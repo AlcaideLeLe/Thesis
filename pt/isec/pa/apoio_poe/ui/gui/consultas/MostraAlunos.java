@@ -19,6 +19,7 @@ public class MostraAlunos extends BorderPane {
         this.context = context;
 
         createViews();
+
     }
 
     TableView tableView = new TableView();

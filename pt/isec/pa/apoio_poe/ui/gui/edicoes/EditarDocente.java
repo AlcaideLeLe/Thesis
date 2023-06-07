@@ -24,6 +24,7 @@ public class EditarDocente extends BorderPane {
     Button buttonClose;
 
 
+
     Label labelNr;
     Label labelNome;
     Label labelEmail;

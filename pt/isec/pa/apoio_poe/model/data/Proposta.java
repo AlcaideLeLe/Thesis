@@ -18,6 +18,7 @@ public class Proposta implements Comparable<Proposta>, Serializable, Cloneable {
         this.idProposta = idProposta;
         this.nrAluno = nrAluno;
         this.titulo = titulo;
+
         this.atribuida = atribuida;
 
     }

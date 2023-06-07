@@ -15,6 +15,7 @@ public class Projeto extends Proposta{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
+
         sb.append("Docente proponente: ").append(docenteProponente).append(System.lineSeparator());
         sb.append("nrAluno proposto: ").append(getNrAluno()).append(System.lineSeparator());
         sb.append(System.lineSeparator());

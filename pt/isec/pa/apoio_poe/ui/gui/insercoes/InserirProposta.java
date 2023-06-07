@@ -44,6 +44,7 @@ public class InserirProposta extends BorderPane {
     Label labelAtribuida;
 
 
+
     public InserirProposta(apoio_poeContext context) {
         super();
         this.context = context;

@@ -31,6 +31,7 @@ public class RemoverCandidatura extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

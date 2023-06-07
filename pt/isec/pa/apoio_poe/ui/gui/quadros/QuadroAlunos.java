@@ -36,6 +36,7 @@ public class QuadroAlunos extends BorderPane {
         grid.setHgap(10);
         grid.setVgap(10);
 
+
         nrAlunosSemProposta = new Label("");
         nrAlunosComProposta = new Label("");
         int contAtr = 0;

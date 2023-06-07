@@ -31,6 +31,7 @@ public class FASE3BLOCK extends BorderPane {
     Button ButtonPropostasAtribuidas;
     Button ButtonRecuarFaseBlockAnterior;
 
+
     Button ButtonSair;
     Button ButtonAvancar;
     Label mensagemBoasVindas;

@@ -30,6 +30,7 @@ public class GraficoPropostasRamos extends BorderPane {
         stage.setWidth(500);
         stage.setHeight(500);
 
+
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
                         new PieChart.Data("PropostasDA", context.devolveNumPropostasDA()),

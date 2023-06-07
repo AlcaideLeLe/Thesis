@@ -12,6 +12,7 @@ public class MostraAlunosComPropostaAtribuida extends BorderPane {
 
     public MostraAlunosComPropostaAtribuida(apoio_poeContext context) {
         this.context = context;
+
         createViews();
     }
     TableView tableView = new TableView();

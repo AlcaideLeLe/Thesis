@@ -31,6 +31,7 @@ public class GestaoDOC extends BorderPane {
     Label mensagemEscolha;
     Label listaDeDocentes;
 
+
     public GestaoDOC(apoio_poeContext context) {
         this.context = context;
         createViews();

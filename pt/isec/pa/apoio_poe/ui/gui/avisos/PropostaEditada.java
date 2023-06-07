@@ -20,6 +20,7 @@ public class PropostaEditada extends BorderPane {
     Button buttonOkay;
 
 
+
     Label labelInfo;
 
     public PropostaEditada(apoio_poeContext context) {

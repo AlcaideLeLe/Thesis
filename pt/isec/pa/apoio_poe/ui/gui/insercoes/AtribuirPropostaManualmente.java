@@ -35,6 +35,7 @@ public class AtribuirPropostaManualmente extends BorderPane {
 
 
 
+
     public AtribuirPropostaManualmente(apoio_poeContext context) {
         super();
         this.context = context;

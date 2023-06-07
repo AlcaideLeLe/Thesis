@@ -27,5 +27,6 @@ public class Apoio_poeGUI extends BorderPane {
         , new GESTAO_MANUAL_ATRIB(fsm));
         this.setTop(new WindowToolBar(fsm));
         this.setCenter(stackPane);
+
     }
 }

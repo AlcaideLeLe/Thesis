@@ -20,6 +20,7 @@ public class AlunoNaoExiste extends BorderPane {
     Button buttonOkay;
 
 
+
     Label labelInfo;
 
     public AlunoNaoExiste(apoio_poeContext context) {

@@ -29,6 +29,7 @@ public class MainJFX extends Application {
         stage.setMinWidth(700);
         stage.setMinHeight(400);
         stage.show();
+
     }
 
 

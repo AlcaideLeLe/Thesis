@@ -15,6 +15,7 @@ public class Main {
         UI ui = new UI(fsm);
         //ui.start();
         Application.launch(MainJFX.class, args);
+
         //PoE poe = new PoE();
         //poe.addAluno();
         //poe.addProposta();

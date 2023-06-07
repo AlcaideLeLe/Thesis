@@ -32,6 +32,7 @@ public class GraficoPropostasAtribuidas extends BorderPane {
         stage.setWidth(500);
         stage.setHeight(500);
 
+
         double propostasAtribuidas = context.consultarPropostasAtribuidas().size() / (double) context.consultarPropostas().size() * 100;
         double propostasDisponveis = context.consultarPropostasDisponiveis().size() / (double) context.consultarPropostas().size() * 100;
         int propostasDisponveisValor = context.consultarPropostasDisponiveis().size();

@@ -24,6 +24,7 @@ public class WindowToolBar extends MenuBar {
 
         //create menu
         mnFile= new Menu("File");
+
         //create menu items
         miNew = new MenuItem("New");
         miOpen = new MenuItem("Open");

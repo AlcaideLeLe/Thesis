@@ -9,6 +9,7 @@ public class Candidatura implements Comparable<Candidatura>, Serializable, Clone
 
     public Candidatura(long nrAluno, ArrayList<String> arrayCandidaturas) {
         this.nrAluno = nrAluno;
+
         this.arrayCandidaturas = arrayCandidaturas;
     }
 

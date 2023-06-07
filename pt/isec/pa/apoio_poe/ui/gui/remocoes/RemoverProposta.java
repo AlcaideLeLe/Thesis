@@ -34,6 +34,7 @@ public class RemoverProposta extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

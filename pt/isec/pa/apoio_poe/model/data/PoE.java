@@ -16,6 +16,7 @@ public class PoE implements Serializable, IOriginator{
 
     private static class MyMemento implements IMemento {
         ArrayList<Aluno> listaDeAlunos = new ArrayList<>();
+
         ArrayList<Docente> listaDeDocentes = new ArrayList<>();
         ArrayList<Proposta> listaDePropostas = new ArrayList<>();
         ArrayList<Candidatura> listaDeCandidaturas = new ArrayList<>();

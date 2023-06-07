@@ -14,6 +14,7 @@ public class MostraPropostasAtribuidas extends BorderPane {
     public MostraPropostasAtribuidas(apoio_poeContext context) {
         this.context = context;
         createViews();
+
     }
 
     TableView tableView = new TableView();

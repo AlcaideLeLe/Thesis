@@ -36,6 +36,7 @@ public class QuadroCandidatura extends BorderPane {
         grid.setHgap(10);
         grid.setVgap(10);
 
+
         nrPropostasAtribuidas = new Label("");
         nrPropostasNaoAtribuidas = new Label("");
         int contAtr = 0;

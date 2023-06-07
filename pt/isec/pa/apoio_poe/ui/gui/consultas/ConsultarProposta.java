@@ -20,6 +20,7 @@ public class ConsultarProposta extends BorderPane {
 
     TextField textID;
 
+
     Label labelID;
 
     Button buttonConfirm;

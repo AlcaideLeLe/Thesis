@@ -26,6 +26,7 @@ public class EditarProposta extends BorderPane {
     Button buttonConfirm;
     Button buttonClose;
 
+
     Label labelTipoProposta;
     Label labelNrAluno;
     Label labelTitulo;

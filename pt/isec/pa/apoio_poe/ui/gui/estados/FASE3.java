@@ -35,6 +35,7 @@ public class FASE3 extends BorderPane {
     Button ButtonExportarAlunosCSV;
     Button ButtonAtribuirPropostasAAlunosSemPropostas;
 
+
     Button ButtonAvancarFase;
     Button ButtonRecuarFase;
     Button ButtonFecharFase;

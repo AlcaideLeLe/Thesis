@@ -34,6 +34,7 @@ public class GESTAO_MANUAL_ATRIB extends BorderPane {
     Button ButtonAtribuirPropostaManualmente;
     Button ButtonRemoverAtribuicaoPropostaManualmente;
 
+
     Label mensagemEscolha;
     Label listaDeAlunos;
 

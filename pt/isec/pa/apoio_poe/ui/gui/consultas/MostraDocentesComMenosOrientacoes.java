@@ -20,6 +20,7 @@ public class MostraDocentesComMenosOrientacoes extends BorderPane {
     public MostraDocentesComMenosOrientacoes(apoio_poeContext context) {
         this.context = context;
         createViews();
+
     }
 
     private void createViews() {

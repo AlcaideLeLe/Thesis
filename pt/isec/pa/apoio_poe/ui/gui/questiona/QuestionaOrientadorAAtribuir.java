@@ -33,6 +33,7 @@ public class QuestionaOrientadorAAtribuir extends BorderPane {
         this.context = context;
         createViews();
         registerHandlers();
+        
 
     }
 

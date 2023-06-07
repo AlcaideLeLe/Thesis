@@ -14,6 +14,7 @@ public class Estagio extends Proposta{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
+
         sb.append("Entidade acolhimento: ").append(idEntidadeAcolhimento).append(System.lineSeparator());
         sb.append(System.lineSeparator());
 

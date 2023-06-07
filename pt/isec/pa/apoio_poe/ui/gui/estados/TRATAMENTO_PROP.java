@@ -33,6 +33,7 @@ public class TRATAMENTO_PROP extends BorderPane {
     Label listaDeAlunos;
 
 
+
     public TRATAMENTO_PROP(apoio_poeContext context) {
         this.context = context;
         createViews();

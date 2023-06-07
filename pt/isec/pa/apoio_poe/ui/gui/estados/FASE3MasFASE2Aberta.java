@@ -38,6 +38,7 @@ public class FASE3MasFASE2Aberta extends BorderPane {
     Label mensagemEscolha;
     Label listaDeDocentes;
 
+
     public FASE3MasFASE2Aberta(apoio_poeContext context) {
         this.context = context;
         createViews();

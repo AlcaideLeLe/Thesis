@@ -35,6 +35,7 @@ public class QuestionaPropostaAConsultarOrientador extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

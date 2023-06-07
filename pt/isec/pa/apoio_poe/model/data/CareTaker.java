@@ -12,6 +12,7 @@ public class CareTaker {
         public CareTaker(IOriginator originator) {
             this.originator = originator;
             history = new ArrayDeque<>();
+
             redoHist= new ArrayDeque<>();
         }
         public void save() {

@@ -34,6 +34,7 @@ public class QuestionaPropostaEditar extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

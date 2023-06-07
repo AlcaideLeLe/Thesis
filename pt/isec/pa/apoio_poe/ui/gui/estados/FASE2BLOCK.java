@@ -41,6 +41,7 @@ public class FASE2BLOCK extends BorderPane {
     Button ButtonConsultaCandidatura;
     Button ButtonRecuarFaseBlockAnterior;
 
+
     Button ButtonSair;
     Button ButtonAvancar;
     Label mensagemBoasVindas;

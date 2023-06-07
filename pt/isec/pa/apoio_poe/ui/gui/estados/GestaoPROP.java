@@ -33,6 +33,7 @@ public class GestaoPROP extends BorderPane {
     Label mensagemEscolha;
     Label listaDePropostas;
 
+
     public GestaoPROP(apoio_poeContext context) {
         this.context = context;
         createViews();

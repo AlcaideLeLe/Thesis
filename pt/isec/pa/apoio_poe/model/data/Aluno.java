@@ -12,6 +12,7 @@ public class Aluno implements Comparable<Aluno>, Serializable, Cloneable {
     private final long numero;
     private String nome;
     private String email;
+
     private String siglaCurso;
     private String siglaRamo;
     private double classificacao;

@@ -13,6 +13,7 @@ public class MostraAlunosComPropostaEOrientador extends BorderPane {
     public MostraAlunosComPropostaEOrientador(apoio_poeContext context) {
         this.context = context;
         createViews();
+
     }
     TableView tableView = new TableView();
 

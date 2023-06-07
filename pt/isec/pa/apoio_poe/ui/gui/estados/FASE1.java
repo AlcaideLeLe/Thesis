@@ -30,6 +30,7 @@ public class FASE1 extends BorderPane {
     Button ButtonFecharFase;
     Label mensagemBoasVindas;
 
+
     Label state;
     apoio_poeContext context;
     WindowToolBar toolBar;

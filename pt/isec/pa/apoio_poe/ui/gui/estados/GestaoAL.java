@@ -35,6 +35,7 @@ public class GestaoAL extends BorderPane {
     Label listaDeAlunos;
 
 
+
     public GestaoAL(apoio_poeContext context) {
         this.context = context;
         createViews();

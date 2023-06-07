@@ -20,6 +20,7 @@ public class NumeroAlunoInvalido extends BorderPane {
     Button buttonOkay;
 
 
+
     Label labelInfo;
 
     public NumeroAlunoInvalido(apoio_poeContext context) {

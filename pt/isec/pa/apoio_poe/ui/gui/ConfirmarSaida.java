@@ -35,6 +35,7 @@ public class ConfirmarSaida extends BorderPane {
         buttonSim.setOnAction(ev->{
             context.save();
             Platform.exit();
+
         });
 
     }

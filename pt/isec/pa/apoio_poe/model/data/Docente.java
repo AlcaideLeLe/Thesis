@@ -13,6 +13,7 @@ public class Docente implements Comparable<Docente>, Serializable, Cloneable {
 
     public Docente(String nome, String email) {
         this.nome = nome;
+
         this.email = email;
     }
 

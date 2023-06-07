@@ -20,6 +20,7 @@ public class ConsultarDocente extends BorderPane {
 
     TextField textMail;
 
+
     Label labelMail;
 
     Button buttonConfirm;

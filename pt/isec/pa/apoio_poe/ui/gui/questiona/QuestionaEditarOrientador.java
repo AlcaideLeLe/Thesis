@@ -38,6 +38,7 @@ public class QuestionaEditarOrientador extends BorderPane {
         createViews();
         registerHandlers();
 
+
     }
 
     private void registerHandlers(){

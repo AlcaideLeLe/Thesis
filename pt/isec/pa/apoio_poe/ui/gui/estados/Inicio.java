@@ -32,6 +32,7 @@ public class Inicio extends BorderPane {
     apoio_poeContext context;
 
 
+
     public Inicio(apoio_poeContext context) throws MalformedURLException {
         this.context = context;
         createViews();

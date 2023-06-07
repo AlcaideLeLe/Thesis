@@ -19,6 +19,7 @@ public class ConsultarAluno extends BorderPane {
 
     TextField textNr;
 
+
     Label labelNr;
 
     Button buttonConfirm;
